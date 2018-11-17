@@ -1,0 +1,41 @@
+---
+title: "Set compiler options in RADStudio"
+author: "C.H. van Immerzeel"
+date: "14 November 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Create a new configuration (preferably in "/OPTSETS" folder)
+
+- View / Configuration Manager / create a new option set / choos "DELPHI personality""
+
+
+## 2. Set active configuration for the selected projects
+
+- View / Configuration Manager 
+- Select projects  (the same projects where the new build configuration was added)
+- Select active configuration
+
+## 3. Add a reference to an option set
+
+- View / Configuration Manager 
+- Select projects  (the same projects where the new build configuration was added)
+- Add a reference to an option set
+- Select newly added build configuration
+- Browse to newly created option set
+- Press "Add reference" and "Close"
+
+## 4. Specify compiler target in individual projects
+
+- In Project manager / select project / right click / options
+- Specify (newly created) compiler target
+- If present: remove (old) existing references.
+
+
+## Modify an existing option set
+- View / Configuration Manager / Edit an option set
+

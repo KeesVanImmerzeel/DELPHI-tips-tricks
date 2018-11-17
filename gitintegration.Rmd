@@ -1,0 +1,41 @@
+---
+title: "Git integration in RADStudio"
+author: "C.H. van Immerzeel"
+date: "14 November 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Add project or projectgroup to version control
+
+1. **Create repo on Github.com** with no Help file (+ add repo); copy URL to clipboard.
+
+2. In RADStudio, **open project**; right clik on project (or project group); **Add to version control** - Git -. Paste URL from clipboard (without ".git"); Check the files for version control; specify import comment; **import**.
+
+3. In explorer **copy README.*** to the project folder.
+
+4. In explorer, right-click on project folder name and specify **GitBash here**
+
+5. In GitBash: **git add README.***. Daarna **git push -u origin master**
+
+
+## Push project or projectgroup to Github
+
+After a change in (a) source file(s) in RADStudio: **save**; **commit** git (from project directory); commit. Daarna **push** (from project directory). Specify username/password (only the first time)
+
+
+## view/delete remote authentication data
+
+in RADStudio: F6-git, Clear;
+
+
+## Delete from version control
+
+1. In explorer: remove hidden git folder
+
+2. In GitHub: goto repo / and settings / delete this repo
+
+3. in RADStudio: view/delete remote authentication data of this repo (F6-git, Clear).
